@@ -1,0 +1,62 @@
+<!--
+ Name: Robert Rodgers
+ Assignment: Final Project
+ Class: CS 601 Fall 2
+ Description of file: This page contains a form for emailing me.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="css/style.css" type="text/css" rel="stylesheet"/>
+     <link href="css/print.css" type="text/css" rel="stylesheet" media="print"/>
+ </head>
+ <body>
+     <!--The menu should be consistant across all pages, with the exception of the h1 tag text-->
+     <header>
+        <h1 class="webpageTitle">Robert Rodgers Bio</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="navItems"><a href="index.html">About Me</a></li>
+                <li class="navItems"><a href="work.html">Work</a></li>
+                <li class="navItems"><a href="hobbies.html">Hobbies</a></li>
+                <li class="navItems"><a href="education.html">Education</a></li>
+                <li class="navItems"><a href="goals.html">Goals</a></li>
+            </ul>
+        </nav>
+        <h2>Email Me</h2>
+    </header>
+
+     <article>
+         
+
+         <form class="emailMe">
+             <label for="firstName">First Name</label>
+             <input type="text" id="firstName" name="firstName">
+             <label for="lastName">Last Name</label>
+             <input type="text" id="lastName" name="lastName">
+             <label for="emailAddress">Email Address</label>
+             <input type="email" id="emailAddress" name="emailAddress">
+             <label for="emailText">Enter your email here</label>
+             <textarea id="emailText" name="emailText" rows="10" cols="50"></textarea>
+             <input type="submit" value="Submit">
+         </form>
+         
+     </article>
+
+     <footer>
+
+        <hr>
+         <!-- Link to my linkin profile -->
+         <a href="https://www.linkedin.com/in/robert-rodgers-173b27116/" target="_blank">
+             <img src="images/LinkedInLogo.png" alt="Linkedin logo" title="Linkedin logo" width="50" height="43">
+         </a>
+
+         <a class="contactMe" href="contactMe.html">Contact Me</a>
+
+     </footer>
+ 
+ </body>
+ </html>

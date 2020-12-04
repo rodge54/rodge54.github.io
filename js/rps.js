@@ -10,9 +10,9 @@ new Vue({
         countdownPics: [],
         playerPics: ['images/pRock.jpg','images/pPaper.jpg','images/pScissor.jpg'],
         compPics: ['images/cRock.jpg','images/cPaper.jpg','images/cScissors.jpg'],
-        playerPic: '',
-        compPic: '',
-        selected: '',
+        playerPic: null,
+        compPic: null,
+        selected: null,
         options: ['Rock', 'Paper', 'Scissors']
     },
     methods: {

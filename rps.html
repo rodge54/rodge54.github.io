@@ -6,6 +6,8 @@
     <title>Rock Paper Scissors</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <link href="css/rps.css" type="text/css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,9 +22,22 @@
         <p id="playerStatus">Player: {{playerStatus}}</p>
         <p id="computerStatus">Computer: {{compStatus}}</p>
 
-        <img v-bind:src="playerPic" alt="PlayerPic" id="playerPic"><!--Player Hand-->
+        <div v-if="playerPic === null" class ="playerPic">
+            <img src="images/eigthyThreeFws.jpg" alt="playerHand" ><!--default pic-->
+        </div>
+        <div v-else class ="playerPic">
+            <img v-bind:src="playerPic" alt="PlayerPic" id="playerPic"><!--Player Hand-->
+        </div>
+        
         <p id="countDown"><!--Countdown Timer--></p>
-        <img v-bind:src="compPic" alt="compHand" id="compPic"><!--Computer Hand-->
+
+        <div v-if="compPic === null" class ="compPic">
+            <img src="images/eigthyThreeFws.jpg" alt="compHand" ><!--default pic-->
+        </div>
+        <div v-else class ="compPic">
+            <img v-bind:src="compPic" alt="compHand" ><!--Computer Hand-->
+        </div>
+        
         
         <select v-model="selected">
             <option disabled value="">Please select one</option>
@@ -31,7 +46,7 @@
             <option value="Scissors">Scissors</option>
         </select>
 
-        <button v-on:click="buttonClick(selected)">Update</button>
+        <button v-on:click="buttonClick(selected)">Ready</button>
     </div>
     <script src="js/rps.js"></script>
 </body>

@@ -3,11 +3,16 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     grid-template-rows: 100px 50px 50px 300px 100px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(41, 41, 216);
 }
 header {
     grid-row: 1;
     grid-column: 1/4;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: yellow;
+
 }
 
 #appRPS {
@@ -15,7 +20,8 @@ header {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: 50px 50px 300px 100px;
+    grid-template-rows: 50px 50px 300px 100px 100px;
+    color: yellow;
 }
 
 #playerScore {
@@ -24,6 +30,7 @@ header {
 }
 
 #computerScore {
+    padding-left: 100px;
     grid-row: 1;
     grid-column: 3;
 }
@@ -34,28 +41,40 @@ header {
 }
 
 #appRPS #computerStatus{
+    padding-left: 100px;
     grid-row: 2;
     grid-column: 3;
 }
 
-#appRPS #playerPic{
+#appRPS .playerPic{
     grid-row: 3;
     grid-column: 1;
 }
 
-#appRPS #compPic{
+#appRPS .compPic{
+    padding-left: 100px;
     grid-row: 3;
     grid-column: 3;
 }
 
 #appRPS select {
-    height: 20px;
-    grid-row: 4;
-    grid-column: 1;
-}
-#appRPS button {
-    height: 20px;
-    width: 100px;
+    height: 50px;
     grid-row: 4;
     grid-column: 2;
+    font-size: x-large;
+    font-family: 'Press Start 2P', cursive;
+}
+#appRPS button {
+    height: 100%;
+    width: 100%;
+    grid-row: 3;
+    grid-column: 2;
+    background-color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-large;
+    color: red;
+}
+
+#appRPS button:hover {
+    background-color: yellow;
 }

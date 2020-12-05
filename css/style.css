@@ -259,7 +259,7 @@ tr:hover {
     grid-row: 1/4;
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: repeat(10, 10%);
+    grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: 20px 20px 20px 100px 20px;
 }
 

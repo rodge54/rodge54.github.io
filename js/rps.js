@@ -75,6 +75,10 @@ new Vue({
             var compChoice = Math.floor((Math.random() * 3));
             this.compPic = this.compPics[compChoice];
             this.getResults(choice, compChoice);
+        },
+
+        backToBio: function() {
+            window.location.href = 'index.html';
         }
     }
 });

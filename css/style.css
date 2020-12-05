@@ -4,12 +4,16 @@
 
 body {
     width: 1140px;
+    background-color: rgb(184, 200, 230);
     margin: 0 auto 0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 200px 5fr 1fr;
 }
 
+header {
+    color: black;
+}
 header {
     grid-row: 1;
     grid-column: 1/6;

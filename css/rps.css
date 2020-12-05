@@ -20,7 +20,7 @@ header {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: 50px 50px 300px 100px 100px;
+    grid-template-rows: 50px 50px 300px 100px 75px;
     color: yellow;
 }
 
@@ -74,10 +74,7 @@ header {
     font-family: 'Press Start 2P', cursive;
 }
 #appRPS button {
-    height: 100%;
-    width: 100%;
-    grid-row: 3;
-    grid-column: 2;
+    background-color: yellow;
     background-color: white;
     font-family: 'Press Start 2P', cursive;
     font-size: x-large;
@@ -87,3 +84,16 @@ header {
 #appRPS button:hover {
     background-color: yellow;
 }
+
+#appRPS #button1 {
+    height: 100%;
+    width: 100%;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#appRPS #button2 {
+    grid-row: 5;
+    grid-column: 2;
+}
+

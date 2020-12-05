@@ -41,7 +41,9 @@
             <option value="Scissors">Scissors</option>
         </select>
 
-        <button v-on:click="buttonClick(selected)">Ready</button>
+        <button v-on:click="buttonClick(selected)" id="button1">Ready</button>
+
+        <button v-on:click="backToBio()" id="button2">Back to Bio</button>
     </div>
     <script src="js/rps.js"></script>
 </body>

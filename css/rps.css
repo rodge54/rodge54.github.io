@@ -47,12 +47,21 @@ header {
 }
 
 #appRPS .playerPic{
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    background-color: white;
+    padding: 20px 0px 0px 65px;
     grid-row: 3;
     grid-column: 1;
 }
 
 #appRPS .compPic{
-    padding-left: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    background-color: white;
+    padding: 20px 0px 0px 65px;
     grid-row: 3;
     grid-column: 3;
 }

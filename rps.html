@@ -14,8 +14,6 @@
         <h1>Rock Paper Scissors Game</h1>
     </header>
 
-    
-
     <div id="appRPS">
         <h3 id="playerScore">Score: {{playerScore}}</h3>
         <h3 id="computerScore">Score: {{computerScore}}</h3>
@@ -28,8 +26,6 @@
         <div v-else class ="playerPic">
             <img v-bind:src="playerPic" alt="PlayerPic" id="playerPic"><!--Player Hand-->
         </div>
-        
-        <p id="countDown"><!--Countdown Timer--></p>
 
         <div v-if="compPic === null" class ="compPic">
             <img src="images/eigthyThreeFws.jpg" alt="compHand" ><!--default pic-->
@@ -37,8 +33,7 @@
         <div v-else class ="compPic">
             <img v-bind:src="compPic" alt="compHand" ><!--Computer Hand-->
         </div>
-        
-        
+  
         <select v-model="selected">
             <option disabled value="">Please select one</option>
             <option value="Rock">Rock</option>

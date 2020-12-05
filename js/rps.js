@@ -6,7 +6,7 @@ new Vue({
         test: 'Hello',
         status: ['Won', 'Lost', 'Tied'],
         playerStatus: 'Hello',
-        compStatus: 'Comp Hello',
+        compStatus: 'Hello',
         countdownPics: [],
         playerPics: ['images/pRock.jpg','images/pPaper.jpg','images/pScissor.jpg'],
         compPics: ['images/cRock.jpg','images/cPaper.jpg','images/cScissors.jpg'],

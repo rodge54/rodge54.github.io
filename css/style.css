@@ -223,8 +223,52 @@ tr:hover {
 
 /* Contact Me Page Specific CSS */
 .emailMe {
-    display: inline;
+    padding-top: 20px;
+    grid-row: 1/4;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: 20px 20px 20px 100px 20px;
 }
+
+.emailMe #firstNameLabel {
+    grid-row: 1;
+    grid-column: 4;
+}
+.emailMe #firstNameInput {
+    grid-row: 1;
+    grid-column: 5/7;
+}
+.emailMe #lastNameLabel {
+    grid-row: 2;
+    grid-column: 4;
+}
+.emailMe #lastNameInput {
+    grid-row: 2;
+    grid-column: 5/7;
+}
+.emailMe #emailLabel {
+    grid-row: 3;
+    grid-column: 4;
+}
+.emailMe #emailInput {
+    grid-row: 3;
+    grid-column: 5/7;
+}
+.emailMe #emailTextLabel {
+    grid-row: 4;
+    grid-column: 4;
+}
+.emailMe #emailTextInput {
+    grid-row: 4;
+    grid-column: 5/7;
+}
+.emailMe #submit {
+    grid-row: 5;
+    grid-column: 5/7;
+}
+
+/* Footer Page CSS */
 footer {
     text-align: center;
     /* grid-row: 3; */
@@ -240,11 +284,4 @@ footer .contactMe {
 footer a:hover {
     color: blue;
 }
-.emailMe {
-    display: grid;
-}
-.emailMe label, input{
-    width: 200px;
-    padding: 0;
-    margin: 0;
-}
+

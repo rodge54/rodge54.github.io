@@ -23,11 +23,11 @@ function makeRequest() {
                     // Creates list items after status == 200 & an array is returned from JSON
                     myArray.forEach((element) => {
                     console.log(element);
-                    $('#assignmentsList').append('<ol>' + '<li>' + element.assignment.timeInPosition + '</li>'
-                                                      + '<li>' + element.assignment.position + '</li>'
-                                                      + '<li>' + element.assignment.squadron + '</li>'
-                                                      + '<li>' + element.assignment.base + '</li>');
-                    }
+                    $('#assignmentsList').append('<li>' + element.assignment.timeInPosition + ', '
+                                                        + element.assignment.position + ', ' 
+                                                        + element.assignment.squadron + ', '
+                                                        + element.assignment.base + '</li>');
+                                                    }
                     );
                 } 
                 else {

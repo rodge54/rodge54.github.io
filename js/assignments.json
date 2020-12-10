@@ -1,0 +1,84 @@
+{
+    "assignments": [
+        {
+            "assignment": {
+                "timeInPosition": "Apr 2007 – Jun 2007",
+                "position": "Student",
+                "squadron": "Basic Military Training",
+                "base": "Lackland AFB, Texas"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Jun 2007 – Oct 2007",
+                "position": "Student",
+                "squadron": "Technical Training School",
+                "base": "Sheppard AFB, Texas"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Oct 2007 – Apr 2010",
+                "position": "Weapons Load Crew Member",
+                "squadron": "555th Aircraft Maintenance Squadron",
+                "base": "Aviano AB, Italy"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Apr 2010 – Nov 2012",
+                "position": "Squadron Lead Crew Member",
+                "squadron": "31st Maintenance Operations Squadron",
+                "base": "Aviano AB, Italy"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Nov 2012 – Mar 2016",
+                "position": "Armament Support Team Chief",
+                "squadron": "325th Maintenance Squadron",
+                "base": "Tyndall AFB, FL"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Mar 2016 – Jun 2016",
+                "position": "Armament Maintenance Team Chief",
+                "squadron": "325th Maintenance Squadron",
+                "base": "Tyndall AFB, FL"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Jun 2016 – Dec 2016",
+                "position": "Weapons Load Crew Chief",
+                "squadron": "325th Aircraft Maintenance Squadron",
+                "base": "Tyndall AFB, FL"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Dec 2016 – May 2018",
+                "position": "Weapons Evaluator",
+                "squadron": "83rd Fighter Weapons Squadron",
+                "base": "Tyndall AFB, FL"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "May 2018 – Jul 2020",
+                "position": "Resource Advisor",
+                "squadron": "83rd Fighter Weapons Squadron",
+                "base": "Tyndall AFB, FL"
+            }
+        },
+        {
+            "assignment": {
+                "timeInPosition": "Jul 2020 – Present",
+                "position": "Weapons Evaluator",
+                "squadron": "83rd Fighter Weapons Squadron",
+                "base": "Tyndall AFB, FL"
+            }
+        }
+    ]
+}

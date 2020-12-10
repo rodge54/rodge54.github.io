@@ -1,9 +1,5 @@
 $(document).ready(function(){
     makeRequest();
-    // Button makes call for AJAX request using JQuery
-    // $('#btn').click(function(){
-    //     makeRequest();
-    // });
 });
 
 function makeRequest() {
@@ -18,7 +14,7 @@ function makeRequest() {
     httpRequest.onreadystatechange = function() {
         if(httpRequest.readyState === XMLHttpRequest.DONE) {
             if(httpRequest.status === 200) {
-                let myArray = JSON.parse(httpRequest.responseText).myDegreesEarned;
+                let myArray = JSON.parse(httpRequest.responseText).assignments;
                 if(Array.isArray(myArray)) {
                     // Creates list items after status == 200 & an array is returned from JSON
                     myArray.forEach((element) => {

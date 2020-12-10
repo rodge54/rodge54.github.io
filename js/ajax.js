@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    window.onload = makeRequest();
+    makeRequest();
     // Button makes call for AJAX request using JQuery
     // $('#btn').click(function(){
     //     makeRequest();

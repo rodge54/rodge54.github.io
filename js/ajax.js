@@ -45,5 +45,7 @@ function makeRequest() {
     
     // This will happen before onreadystatechange
     httpRequest.open('GET', 'assignments.json');
+    console.log('After httpRequest.open, STATUS: ' + httpRequest.status);
     httpRequest.send();
+    console.log('After httpRequest.send, STATUS: ' + httpRequest.status);
 }

@@ -1,6 +1,8 @@
 $(document).ready(function(){
     console.log("Ready for ajax request");
-    makeRequest();
+    $(function(){
+        makeRequest();
+    });
 });
 
 function makeRequest() {

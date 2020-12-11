@@ -289,19 +289,19 @@ tr:hover {
 }
 /* Warnings for form Validation */
 .emailMe #firstNameWarning {
-    font-size: x-small;
+    font-size: small;
     color: red;
     grid-row: 1;
     grid-column: 7/9;
 }
 .emailMe #lastNameWarning {
-    font-size: x-small;
+    font-size: small;
     color: red;
     grid-row: 2;
     grid-column: 7/9;
 }
 .emailMe #emailWarning {
-    font-size: x-small;
+    font-size: small;
     color: red;
     grid-row: 3;
     grid-column: 7/9;

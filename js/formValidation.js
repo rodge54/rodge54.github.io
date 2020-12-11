@@ -64,7 +64,7 @@ function warningMessage(name) {
     }
 
     else if ( name == 'lastNameInput') {
-        document.getElementById('firstNameWarning').textContent = 'Last Name must be at least 2 characters';
+        document.getElementById('lastNameWarning').textContent = 'Last Name must be at least 2 characters';
     }
 
     else {

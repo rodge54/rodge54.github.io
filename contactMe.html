@@ -12,6 +12,7 @@
      <title>Document</title>
      <link href="css/style.css" type="text/css" rel="stylesheet"/>
      <link href="css/print.css" type="text/css" rel="stylesheet" media="print"/>
+     <script src="js/formValidation.js"></script>
  </head>
  <body>
      <!--The menu should be consistant across all pages, with the exception of the h1 tag text-->
@@ -35,10 +36,13 @@
          <form class="emailMe">
              <label for="firstName" id="firstNameLabel">First Name</label>
              <input type="text" name="firstName" size="20" id="firstNameInput" >
+             <label for="firstName" id="firstNameWarning"></label>
              <label for="lastName" id="lastNameLabel">Last Name</label>
              <input type="text" name="lastName" id="lastNameInput">
+             <label for="lastName" id="lastNameWarning"></label>
              <label for="emailAddress" id="emailLabel">Email Address</label>
              <input type="email" name="emailAddress" id="emailInput">
+             <label for="emailAddress" id="emailWarning"></label>
              <label for="emailText" id="emailTextLabel">Enter your email here</label>
              <textarea name="emailText" rows="10" cols="50" id="emailTextInput"></textarea>
              <input type="submit" value="Submit" id="submit">

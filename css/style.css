@@ -271,6 +271,10 @@ tr:hover {
     grid-row: 1;
     grid-column: 5/7;
 }
+.emailMe #firstNameWarning {
+    grid-row: 1;
+    grid-column: 7/9;
+}
 .emailMe #lastNameLabel {
     grid-row: 2;
     grid-column: 4;
@@ -279,6 +283,10 @@ tr:hover {
     grid-row: 2;
     grid-column: 5/7;
 }
+.emailMe #lastNameWarning {
+    grid-row: 2;
+    grid-column: 7/9;
+}
 .emailMe #emailLabel {
     grid-row: 3;
     grid-column: 4;
@@ -286,6 +294,10 @@ tr:hover {
 .emailMe #emailInput {
     grid-row: 3;
     grid-column: 5/7;
+}
+.emailMe #emailWarning {
+    grid-row: 3;
+    grid-column: 7/9;
 }
 .emailMe #emailTextLabel {
     grid-row: 4;

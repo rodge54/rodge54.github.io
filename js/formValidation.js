@@ -22,7 +22,7 @@ function validateName(nameText) {
     let myRegEx = /^[a-zA-Z]*$/;
     if (name.length >= 2 && myRegEx.test(name)) {
         document.getElementById(nameText).style.borderColor = "black";
-        if (nameText == 'firstName') {
+        if (nameText == 'firstNameInput') {
             document.getElementById('firstNameWarning').textContent = '';
         }
         else {

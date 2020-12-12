@@ -1,30 +1,31 @@
 new Vue({
-    el: '#appRPS', 
+    el: "#appRPS", 
     data: {
         playerScore: 0,
         computerScore: 0,
-        test: 'Hello',
-        status: ['Won', 'Lost', 'Tied'],
-        playerStatus: 'Hello',
-        compStatus: 'Hello',
+        test: "Hello",
+        status: ["Won", "Lost", "Tied"],
+        playerStatus: "Hello",
+        compStatus: "Hello",
         countdownPics: [],
-        playerPics: ['images/pRock.jpg','images/pPaper.jpg','images/pScissor.jpg'],
-        compPics: ['images/cRock.jpg','images/cPaper.jpg','images/cScissors.jpg'],
+        playerPics: ["images/pRock.jpg","images/pPaper.jpg","images/pScissor.jpg"],
+        compPics: ["images/cRock.jpg","images/cPaper.jpg","images/cScissors.jpg"],
         playerPic: null,
         compPic: null,
         selected: null,
-        options: ['Rock', 'Paper', 'Scissors']
+        options: ["Rock", "Paper", "Scissors"]
     },
     methods: {
         updateStatus: function(playerResult, computerResult) {
+            // Updates Win/Loss/Tie status for player and computer
             this.compStatus = this.status[computerResult];
             this.playerStatus = this.status[playerResult];
         },
         getResults: function(playerChoice, compChoice) {
-            // Won = 0 *** Lost = 1 *** Tie = 2
-            var won = 0;
-            var lost = 1;
-            var tie = 2;
+            // Determines if the player won, lost, or tied
+            const won = 0;
+            const lost = 1;
+            const tie = 2;
             if (playerChoice === compChoice) {
                 this.playerStatus = this.status[tie];
                 this.compStatus = this.status[tie];
@@ -52,33 +53,30 @@ new Vue({
         },
 
         updateScore: function(whoWon) {
-            if (whoWon === "computer") {
-                this.computerTitle += 1;
-            }
-            else {
-                this.playerTitle += 1;
-            }
+            // Updates score of winner
+            let winner = (whoWon === "computer") ? this.computerTitle : this.playerTitle;
+            winner += 1;
         },
 
         buttonClick: function(playerChoice) {
-            var choice = 0;
-            if (playerChoice === 'Rock') {
+            let choice = 0;
+            if (playerChoice === "Rock") {
                 choice = 0;
             }
-            else if (playerChoice === 'Paper') {
+            else if (playerChoice === "Paper") {
                 choice = 1;
             } 
             else {
                 choice = 2;
             }
             this.playerPic = this.playerPics[choice]; 
-            var compChoice = Math.floor((Math.random() * 3));
+            const compChoice = Math.floor((Math.random() * 3));
             this.compPic = this.compPics[compChoice];
             this.getResults(choice, compChoice);
         },
 
         backToBio: function() {
-            window.location.href = 'index.html';
+            window.location.href = "index.html";
         }
     }
 });

@@ -12,9 +12,7 @@ header {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     color: yellow;
-
 }
-
 #appRPS {
     grid-row: 3/5;
     grid-column: 1/4;
@@ -23,29 +21,24 @@ header {
     grid-template-rows: 50px 50px 300px 100px 75px;
     color: yellow;
 }
-
 #playerScore {
     grid-row: 1;
     grid-column: 1;
 }
-
 #computerScore {
     padding-left: 100px;
     grid-row: 1;
     grid-column: 3;
 }
-
 #appRPS #playerStatus{
     grid-row: 2;
     grid-column: 1;
 }
-
 #appRPS #computerStatus{
     padding-left: 100px;
     grid-row: 2;
     grid-column: 3;
 }
-
 #appRPS .playerPic{
     border-style: solid;
     border-color: black;
@@ -55,7 +48,6 @@ header {
     grid-row: 3;
     grid-column: 1;
 }
-
 #appRPS .compPic{
     border-style: solid;
     border-color: black;
@@ -65,7 +57,6 @@ header {
     grid-row: 3;
     grid-column: 3;
 }
-
 #appRPS select {
     height: 50px;
     grid-row: 4;
@@ -80,18 +71,17 @@ header {
     font-size: x-large;
     color: red;
 }
-
 #appRPS button:hover {
     background-color: yellow;
 }
-
+/* Ready Button */
 #appRPS #button1 {
     height: 100%;
     width: 100%;
     grid-row: 3;
     grid-column: 2;
 }
-
+/* Back to Bio Button */
 #appRPS #button2 {
     grid-row: 5;
     grid-column: 2;

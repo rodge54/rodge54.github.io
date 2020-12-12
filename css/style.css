@@ -1,7 +1,6 @@
 * {
     font-family: Georgia;
 }
-
 body {
     width: 1140px;
     font-size: 18px;
@@ -11,7 +10,6 @@ body {
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 200px 5fr 1fr;
 }
-
 header {
     color: black;
 }
@@ -20,12 +18,10 @@ header {
     grid-column: 1/6;
     row-gap: 10px;
 }
-
 h1, h2 {
     padding-top: 10px;
     text-align: center;
 }
-
 /* Styles the overall navbar unordered list and spans accross page */
 nav {
     text-align: center;
@@ -33,7 +29,6 @@ nav {
     padding: 0;
     margin: 0 auto;
 }
-
 nav ul {
     padding: 0;
 }
@@ -44,7 +39,6 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 .navItems a {
     color: white;
     padding: 12px 12px;
@@ -52,17 +46,14 @@ nav ul {
     overflow: hidden;
     background-color: midnightblue;
 } 
-
 /* Adds color to nav item for the page you are currently on */
 .navCurrentPage a {
     background-color: rgba(37, 35, 35, 0.363);
 } 
-
 /* Changes what you see when mouse is hovering over hyperlink in navbar */
 .navItems a:hover {
     background-color: black;
 }
-
 /* Styling for title */
 .webpageTitle {
     font-family: 'Brush Script MT';
@@ -70,14 +61,12 @@ nav ul {
     padding: 0px;
     color: black;
 }
-
 article {
     grid-row: 2;
     grid-column: 1/6;
     display: grid;
     grid-template-columns: 33.3% 33.4% 33.3%;
 }
-
 /* About Me Page Specific CSS*/
 article #profile {
     grid-column: 1/4;
@@ -97,7 +86,6 @@ article #profile {
     grid-row: 2;
     grid-column: 2;
 }
-
 /* Work Page Specific CSS */
 article #work {
     grid-row: 1/4;
@@ -150,7 +138,6 @@ table th {
 tr:hover {
     background-color: rgb(197, 194, 194);
 }
-
 /* Hobbies Page Specific CSS */
 #hobbiesArticle {
     grid-row: 2;
@@ -158,7 +145,6 @@ tr:hover {
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 25% 15% 10% 7%;
 }
-
 #hobbiesArticle figcaption{
     text-align: center;
 }
@@ -183,7 +169,6 @@ tr:hover {
     grid-row: 3;
     grid-column: 2;
 }
-
 /* Education Page Specific CSS */
 #edBody {
     grid-template-rows: 200px 940px 3fr 1fr;
@@ -192,7 +177,6 @@ tr:hover {
     grid-row: 6;
 }
 #edArticle {
-    /* grid-template-columns: 33.3% 33.4% 33.3%; */
     grid-template-rows: 400px repeat(2, 120px) 300px;
 }
 #laptopPic {
@@ -208,7 +192,7 @@ tr:hover {
     grid-row: 3;
     grid-column: 1/4;
 }
-.hurricanePics {
+#hurricanePics {
     grid-row: 4;
     grid-column:1/4;
     display: inline-flex;
@@ -221,7 +205,6 @@ tr:hover {
 #myEducation h3 {
     text-align: center;
 }
-
 /* Goals Page Specific CSS */
 #goalsArticle {
     grid-template-rows: 30px 80px 100px 30px 200px;  
@@ -244,17 +227,16 @@ tr:hover {
     grid-column: 1/4;
     text-align: center;
 }
-.airSpace {
+#airSpace {
     grid-row: 5;
     grid-column: 1/4;
     display: inline-flex;
 }
-.airSpaceParagraph{
+#airSpaceParagraph{
     float: left;
 }
-
 /* Contact Me Page Specific CSS */
-.emailMe {
+#emailMe {
     padding-top: 20px;
     grid-row: 1/4;
     grid-column: 1/4;
@@ -262,59 +244,58 @@ tr:hover {
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: 20px 20px 20px 100px 20px;
 }
-
-.emailMe #firstNameLabel {
+#emailMe #firstNameLabel {
     grid-row: 1;
     grid-column: 4;
 }
-.emailMe #firstNameInput {
+#emailMe #firstNameInput {
     grid-row: 1;
     grid-column: 5/7;
 }
-.emailMe #lastNameLabel {
+#emailMe #lastNameLabel {
     grid-row: 2;
     grid-column: 4;
 }
-.emailMe #lastNameInput {
+#emailMe #lastNameInput {
     grid-row: 2;
     grid-column: 5/7;
 }
-.emailMe #emailLabel {
+#emailMe #emailLabel {
     grid-row: 3;
     grid-column: 4;
 }
-.emailMe #emailInput {
+#emailMe #emailInput {
     grid-row: 3;
     grid-column: 5/7;
 }
 /* Warnings for form Validation */
-.emailMe #firstNameWarning {
+#emailMe #firstNameWarning {
     font-size: small;
     color: red;
     grid-row: 1;
     grid-column: 7/9;
 }
-.emailMe #lastNameWarning {
+#emailMe #lastNameWarning {
     font-size: small;
     color: red;
     grid-row: 2;
     grid-column: 7/9;
 }
-.emailMe #emailWarning {
+#emailMe #emailWarning {
     font-size: small;
     color: red;
     grid-row: 3;
     grid-column: 7/9;
 }
-.emailMe #emailTextLabel {
+#emailMe #emailTextLabel {
     grid-row: 4;
     grid-column: 4;
 }
-.emailMe #emailTextInput {
+#emailMe #emailTextInput {
     grid-row: 4;
     grid-column: 5/7;
 }
-.emailMe #submit {
+#emailMe #submit {
     grid-row: 5;
     grid-column: 5/7;
 }
@@ -325,7 +306,7 @@ footer {
     /* grid-row: 3; */
     grid-column: 1/6;
 }
-footer .contactMe {
+footer #contactMe {
     padding: 0 20px 20px 20px;
     font-size: 25px;
     text-decoration: none;

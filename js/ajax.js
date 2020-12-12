@@ -1,5 +1,6 @@
 $(document).ready(function(){
     console.log("Ready for ajax request");
+    // Auto runs makeRequest when document is ready
     $(function(){
         makeRequest();
     });
@@ -7,7 +8,7 @@ $(document).ready(function(){
 
 function makeRequest() {
     // AJAX request is made here
-    let httpRequest = new XMLHttpRequest();
+    const httpRequest = new XMLHttpRequest();
   
     if(!httpRequest) {
         alert("Problem makeRequest");
@@ -17,20 +18,20 @@ function makeRequest() {
     httpRequest.onreadystatechange = function() {
         if(httpRequest.readyState === XMLHttpRequest.DONE) {
             if(httpRequest.status === 200) {
-                let myArray = JSON.parse(httpRequest.responseText).assignments;
+                const myArray = JSON.parse(httpRequest.responseText).assignments;
                 if(Array.isArray(myArray)) {
                     // Creates list items after status == 200 & an array is returned from JSON
                     myArray.forEach((element) => {
                     console.log(element);
-                    $('#assignmentsList').append('<li>' + element.assignment.timeInPosition + ', '
-                                                        + element.assignment.position + ', ' 
-                                                        + element.assignment.squadron + ', '
-                                                        + element.assignment.base + '</li>');
+                    $("#assignmentsList").append("<li>" + element.assignment.timeInPosition + ", "
+                                                        + element.assignment.position + ", " 
+                                                        + element.assignment.squadron + ", "
+                                                        + element.assignment.base + "</li>");
                                                     }
                     );
                 } 
                 else {
-                    console.log('Is not an array', myArray);
+                    console.log("Is not an array", myArray);
                 }
             } 
             else {
@@ -44,8 +45,6 @@ function makeRequest() {
     };	
     
     // This will happen before onreadystatechange
-    httpRequest.open('GET', 'assignments.json');
-    console.log('After httpRequest.open, STATUS: ' + httpRequest.status);
+    httpRequest.open("GET", "assignments.json");
     httpRequest.send();
-    console.log('After httpRequest.send, STATUS: ' + httpRequest.status);
 }

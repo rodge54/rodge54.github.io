@@ -24,7 +24,7 @@ function makeRequest() {
                     myArray.forEach((element) => {
                     console.log(element);
                     $("#assignmentsList").append("<li>" + element.assignment.timeInPosition + ", "
-                                                        + element.assignment.position + ", " 
+                                                        + "<strong>" + element.assignment.position + "</strong>" + ", " 
                                                         + element.assignment.squadron + ", "
                                                         + element.assignment.base + "</li>");
                                                     }

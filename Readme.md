@@ -8,16 +8,24 @@ every page (LinkedIn image at bottom), I added multiple external links.
 
 ## Week 2 Updates
 
-- Added style.css and print.css style sheets.  Styled all pages to have matching headers, navbars, and footers.  Added a 
-horizontal rule to html footer. Added some pictures to pull together some of the pages.  I spend a decent amount of time
-making the navbar responsive and figuring out how to position it.  I might make some changes later on to use flexgrid.
-
+- Added style.css and print.css style sheets.  Styled all pages to have matching headers, navbars, and footers.  Added a horizontal rule to html footer. Added some pictures to pull together some of the pages.  I spend a decent amount of time making the navbar responsive and figuring out how to position it.  I might make some changes later on to use flexgrid.
 - I also added an additional contact me page.  It still needs some work on the styling and doesn't have functionality at this 
 point.  Coming soon!
 
+## Final Project Updates
+
+- Added grid to all pages
+- Added **strong** tags to education page.
+- Added AJAX request to work.html page. The request pulls from assignments.json and populates the assignements list.  Added **strong** tag to bold the job portion of the list.
+- Created a Rock Paper Scissors application using Vue.  This has it's own html, css, and js files so it is distinct from the rest of the website.
+- Added form validation to Contact me page and added contact me navigation button
+- Fixed a lot of styling and layout issues.
+- Completed code refactoring and commenting.
+
+
 # Running Instruction
 
-- Open index.html file with your browser of choice
+- Open index.html file with your browser of choice or visit https://rodge54.github.io/index.html
 - Use navigation bar to switch between pages
 
 # Files & Directories
@@ -34,8 +42,8 @@ point.  Coming soon!
     - My future goals
 - contactMe.html
     - Contact me by email page
-- template.html
-    - This is a template for future page implementation
+- assignments.json
+    - JSON file with all military bases and jobs I have had 
 - images directory
     - Contains images for all pages
 - css directory
@@ -44,6 +52,14 @@ point.  Coming soon!
             - styles all pages for general web browsing
         - print.css
             - styles pages in case user wants to print the page
+- js directory
+    - Contains all JavaScript files
+        - ajax.js
+            - completes AJAX request for list of assignments
+        - formValidation.js
+            - validates inputs on contact me page
+        - rps.js
+            - contains all vue elements for Rock Paper Scissors game
 
 # Credits
 

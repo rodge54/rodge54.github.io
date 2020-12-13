@@ -1,6 +1,7 @@
 new Vue({
     el: "#appRPS", 
-    data: {
+    data: function(){
+        return {
         playerScore: 0,
         computerScore: 0,
         test: "Hello",
@@ -14,6 +15,7 @@ new Vue({
         compPic: null,
         selected: null,
         options: ["Rock", "Paper", "Scissors"]
+        };
     },
     methods: {
         updateStatus: function(playerResult, computerResult) {

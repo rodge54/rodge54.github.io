@@ -1,3 +1,9 @@
+/*
+ Name: Robert Rodgers
+ Assignment: Final Project
+ Class: CS 601 Fall 2
+ Description of file: Handles AJAX request to display list of military assignments on work page.
+ */
 $(document).ready(function(){
     console.log("Ready for ajax request");
     // Auto runs makeRequest when document is ready

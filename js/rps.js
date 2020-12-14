@@ -1,3 +1,9 @@
+/*
+ Name: Robert Rodgers
+ Assignment: Final Project
+ Class: CS 601 Fall 2
+ Description of file: Handles all Javascript using Vue.js for the rock paper scissors game.
+ */
 new Vue({
     el: "#appRPS", 
     data: function(){

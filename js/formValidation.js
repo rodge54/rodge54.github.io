@@ -1,3 +1,9 @@
+/*
+ Name: Robert Rodgers
+ Assignment: Final Project
+ Class: CS 601 Fall 2
+ Description of file: Handles all Javascript for form validation on the contact me page.
+ */
 window.onload = function() {
     // After window loads, submit button is ready to run
     const submitButton = document.getElementById("submit");

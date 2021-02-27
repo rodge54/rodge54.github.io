@@ -323,3 +323,9 @@ footer a:hover {
     color: blue;
 }
 
+#testingText {
+    font-size: 30px;
+    color: red; 
+    grid-column: 1/4;
+    text-align: center;
+}
